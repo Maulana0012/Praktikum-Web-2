@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="card-body">
                                     <?php echo $this->session->flashdata('message'); ?>
-                                    <form action="<? base_url('login/dologin') ?>" method="POST">
+                                    <form action="<?= base_url('login/dologin') ?>" method="POST">
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="inputEmail" name="email" type="email"
                                                 placeholder="name@example.com" />
@@ -40,9 +40,7 @@
                                         <div class="form-check mb-3">
                                             <input class="form-check-input" id="inputRememberPassword" type="checkbox"
                                                 value="" />
-                                            <input class="form-check-input" id="inputRememberPassword" type="checkbox"
-                                                value="" />
-                                            <label class="form-check-label" for="inputRemember Password">Remember
+                                            <label class="form-check-label" for="inputRememberPassword">Remember
                                                 Password</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-8">
@@ -72,7 +70,6 @@
                         </div>
                     </div>
                 </div>
-            </footer>
             </footer>
         </div>
     </div>
