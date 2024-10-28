@@ -40,7 +40,7 @@ class User_model extends CI_Model
             'phone' => htmlspecialchars($this->input->post('phone'), true),
             'role' => htmlspecialchars($this->input->post('role'), true),
             'is_active' => 1,
-        );
+        ); 
         return $this->db->set($data)->where($this->primary, $id)->update($this->_table);
     }
 }
