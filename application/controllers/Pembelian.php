@@ -8,6 +8,16 @@ class Barang extends CI_Controller
         $this->load->model('Barang_model');
         $this->load->library('form_validation');
     }
+    public function index()
+    {
+        $data = array(
+            'title' => 'View Data Barang',
+            'userlog' => infoLogin(),
+            'barang' => $this->Barang_model->getAll(),
+            'content' => 'barang/index'
+        );
+        $this->load->view('template/main', $data);
+    }
     public function add()
     {
         $data = array(
@@ -28,17 +38,6 @@ class Barang extends CI_Controller
             $this->session->set_flashdata("success", "Data Kategori Berhasil DiSimpan");
         }
         redirect('barang');
-    }
-
-    public function index()
-    {
-        $data = array(
-            'title' => 'View Data Barang / C0d&d by Ahrnad M@uIana',
-            'userlog' => infoLogin(),
-            'barang' => $this->Barang_model->getAll(),
-            'content' => 'barang/index'
-        );
-        $this->load->view('template/main', $data);
     }
 
     public function edit()

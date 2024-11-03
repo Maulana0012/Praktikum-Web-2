@@ -33,8 +33,8 @@
                         <input class="form-control" type="text" name="email" placeholder="EMAIL" required />
                     </div>
                     <div class="mb-3">
-                        <label for="alamat">ALAMAT</label>
-                        <input class="form-control" type="text" name="alamat" placeholder="ALAMAT" required />
+                        <label for="address">ALAMAT</label>
+                        <input class="form-control" type="text" name="address" placeholder="ALAMAT" required />
                     </div>
                     <div class="mb-3">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">PASSWORD</label>

@@ -45,7 +45,7 @@
                     <div class="mb-3">
                         <label>Supplier <code>*</code></label>
                         <select name="supplier" class="form-control" required>
-                            <option value="" hidden>- Pilih -</option>
+                            <option value="">- Pilih -</option>
                             <?php foreach ($supplier as $k): ?>
                                 <option value="<?php echo $k['id'] ?>"><?php echo $k['name'] ?></option>
                             <?php endforeach; ?>

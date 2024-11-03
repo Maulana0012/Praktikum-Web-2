@@ -1,7 +1,7 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
-class Kategori_model extends CI_Model
+class Satuan_model extends CI_Model
 {
-    protected $_table = 'kategori';
+    protected $_table = 'satuan';
     protected $primary = 'id';
     public function getAll()
     {
@@ -10,7 +10,10 @@ class Kategori_model extends CI_Model
 
     public function save()
     {
-        $data = array('name' => htmlspecialchars($this->input->post('name'), true));
+        $data = array(
+            'name' => htmlspecialchars($this->input->post('name'), true),
+            'diskripsi' => htmlspecialchars($this->input->post('diskripsi'), true)
+        );
         return $this->db->insert($this->_table, $data);
     }
     public function getById($id)
@@ -22,7 +25,8 @@ class Kategori_model extends CI_Model
     {
         $id = $this->input->post('id');
         $data = array(
-            'name' => htmlspecialchars($this->input->post('name'), true)
+            'name' => htmlspecialchars($this->input->post('name'), true),
+            'diskripsi' => htmlspecialchars($this->input->post('diskripsi'), true)
         );
         return $this->db->set($data)->where($this->primary, $id)->update($this->_table);
     }
@@ -31,7 +35,7 @@ class Kategori_model extends CI_Model
     {
         $this->db->where('id', $id)->delete($this->_table);
         if ($this->db->affected_rows() > 0) {
-            $this->session->set_flashdata("success", "Data Kategori Berhasil DiDelete");
+            $this->session->set_flashdata("success", "Data Satuan Berhasil DiDelete");
         }
     }
 }

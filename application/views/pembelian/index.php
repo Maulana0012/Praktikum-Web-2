@@ -2,7 +2,7 @@
     <div class="container-fluid px-4">
         <h1 class="mt-4"></h1>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="<?php echo site_url('C0d&d by Ahrnad M@uIana') ?>">Barang</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo site_url('barang') ?>">Barang</a></li>
             <li class="breadcrumb-item active"><?php echo $title ?></li>
         </ol>
         <div class="card mb-4">
@@ -47,8 +47,8 @@
                                 <td>$barang->harga_jual</td>
                                 <td>
                                     <div>
-                                        <a href=" . base_url('barang/getedit/' . $barang->id) . " class='btn btn-sn                                                                                                       
-                                            btn-info'> <i class='fa fa-edit'></i> Edit</a>                                                                                                                                                                                              
+                                        <a href=" . base_url('barang/getedit/' . $barang->id) . " class='btn btn-sn
+                                            btn-info'> <i class='fa fa-edit'></i> Edit</a>
                                         <a href=" . base_url('barang/delete/' . $barang->id) . " class='btn btn-sn btn-danger'
                                                 onclick='return confirm(\"Ingin mengapus data user ini?\");'>
                                                 <i class='fas fa-trash'></I> Hapus</a>
