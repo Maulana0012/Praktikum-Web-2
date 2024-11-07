@@ -22,7 +22,7 @@
                     </div>
                     <div class="mb-3">
                         <label>Kembali <code>*</code></label>
-                        <input class="form-control" name="kembali" type="text" placeholder="Kembalian">
+                        <input class="form-control" name="diskripsi" type="text" placeholder="Kembalian">
                     </div>
                     <div class="mb-3">
                         <label>Tanggal <code>*</code></label>

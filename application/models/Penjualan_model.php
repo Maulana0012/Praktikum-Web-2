@@ -6,7 +6,7 @@ class Penjualan_model extends CI_Model
     public function getAll()
     {
 
-        $sql = "SELECT * FROM penjualan LEFT JOIN kustomer ON penjualan.id = kustomer.id LEFT JOIN user ON kustomer.id = user.id; ";
+        $sql = "SELECT tpenjualan.id, tkustomer.name AS kustomer, tpenjualan.invoice, tpenjualan.total, tpenjualan.bayar, tpenjualan.kembali, tpenjualan.tanggal FROM (penjualan tpenjualan LEFT JOIN kustomer tkustomer ON tpenjualan.kustomer_id = tkustomer.id);";
         return $this->db->query($sql)->result();
     }
 

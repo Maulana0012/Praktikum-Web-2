@@ -33,7 +33,7 @@ class Barang extends CI_Controller
     public function index()
     {
         $data = array(
-            'title' => 'View Data Barang / C0d&d by Ahrnad M@uIana',
+            'title' => 'View Data Barang',
             'userlog' => infoLogin(),
             'barang' => $this->Barang_model->getAll(),
             'content' => 'barang/index'
@@ -67,5 +67,18 @@ class Barang extends CI_Controller
     {
         $this->Barang_model->delete($id);
         redirect('barang');
+    }
+
+    public function laporan()
+    {
+        $data = array(
+            'title' => 'Tambah Laporan Data Barang',
+            'content' => 'barang/laporan'
+        );
+        $this->load->view(
+            "template/main",
+            $data
+        );
+
     }
 }

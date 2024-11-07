@@ -33,7 +33,7 @@ class Penjualan extends CI_Controller
     {
         $this->Penjualan_model->save();
         if ($this->db->affected_rows() > 0) {
-            $this->session->set_flashdata("success", "Data Kategori Berhasil DiSimpan");
+            $this->session->set_flashdata("success", "Data penjualan Berhasil DiSimpan");
         }
         redirect('penjualan');
     }
@@ -63,4 +63,18 @@ class Penjualan extends CI_Controller
         $this->Penjualan_model->delete($id);
         redirect('penjualan');
     }
+
+    public function laporan()
+    {
+        $data = array(
+            'title' => 'Tambah Laporan Data Penjualan',
+            'content' => 'penjualan/laporan'
+        );
+        $this->load->view(
+            "template/main",
+            $data
+        );
+
+    }
+
 }

@@ -7,7 +7,7 @@
         </ol>
         <div class="card mb-4">
             <div class="card-header">
-                <a href="<?php echo site_url('penjualan/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+                <a href="<?php echo site_url('pembelian/add') ?>"><i class="fas fa-plus"></i> Add New</a>
             </div>
             <?php if ($this->session->flashdata('success')): ?>
                 <div class="alert alert-success" role="alert">
@@ -21,6 +21,7 @@
                         <thead>
                             <tr>
                                 <th>No.</th>
+                                <th>Kustomer.</th>
                                 <th>Invoice</th>
                                 <th>Total</th>
                                 <th>Bayar</th>
@@ -36,6 +37,7 @@
                                 echo "
                             <tr>
                                 <td>$no</td>
+                                <td>$penjualan->kustomer</td>
                                 <td>$penjualan->invoice</td>
                                 <td>$penjualan->total</td>
                                 <td>$penjualan->bayar</td>

@@ -59,17 +59,17 @@
                             <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne"
                                 data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="<?php echo site_url('laporan/penjualan'); ?>">
+                                    <a class="nav-link" href="<?php echo site_url('penjualan/laporan'); ?>">
                                         Laporan Penjualan</a>
-                                    <a class="nav-link" href="<?php echo site_url('laporan/barang'); ?>">
+                                    <a class="nav-link" href="<?php echo site_url('barang/laporan'); ?>">
                                         Laporan Barang</a>
-                                    <a class="nav-link" href="<?php echo site_url('laporan/stok'); ?>">
+                                    <a class="nav-link" href="<?php echo site_url('stok/laporan'); ?>">
                                         Laporan Stok</a> <a class="nav-link"
-                                        href="<?php echo site_url('laporan/pembelian'); ?>">
+                                        href="<?php echo site_url('pembelian/laporan'); ?>">
                                         Laporan Pembelian</a>
-                                    <a class="nav-link" href="<?php echo site_url('laporan/return'); ?>">
+                                    <a class="nav-link" href="<?php echo site_url('return/laporan'); ?>">
                                         Stok Barang</a>
-                                    <a class="nav-link" href="<?php echo site_url('kustomer/kustomerlap'); ?>">
+                                    <a class="nav-link" href="<?php echo site_url('kustomer/laporan'); ?>">
                                         Kustomer</a>
                                 </nav>
                             </div>
